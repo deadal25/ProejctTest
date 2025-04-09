@@ -352,7 +352,7 @@
                                                 let nilaiPelaksanaan = parseFloat(document.getElementById('pelaksanaan').value);
 
                                                 let vnilaiLO = ((nilaiLearning / targetLO) * 100) ;
-                                                let ValuenilaiLO = (vnilaiLO > 100) ? 120 : vnilaiLO.toFixed(2);
+                                                let ValuenilaiLO = (vnilaiLO > 100) ? 120 : vnilaiLO;
 
                                                 let nilaiLO = (ValuenilaiLO * 0.6)
                                                 let nilaiPK = (nilaiPelaksanaan * 0.4);
