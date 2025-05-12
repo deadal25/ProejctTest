@@ -59,9 +59,28 @@ document.addEventListener("DOMContentLoaded", function () {
     if (logoutBtn) {
         logoutBtn.addEventListener("click", function () {
             localStorage.removeItem("loggedInUser");
+            // localStorage.removeItem("loggedInUser");
+        
+            // window.location.href = "index.html"; 
             window.location.href = "index.html";
         });
     }
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     const logoutBtn = document.getElementById("logout");
+    //     if (logoutBtn) {
+    //         logoutBtn.addEventListener("click", function () {
+    //             // Hapus data yang terkait dengan pengguna yang sedang login
+    //             localStorage.removeItem("loggedInUser");  // Menghapus informasi login
+    //             localStorage.clear();
+    //             sessionStorage.clear();
+
+    
+    //             // Setelah logout, arahkan pengguna kembali ke halaman login
+    //             window.location.href = "index.html"; // Arahkan ke halaman login
+    //         });
+    //     }
+    // });
+    
 
     // Fungsi untuk mendapatkan data pengguna saat ini
     function getUserData() {
